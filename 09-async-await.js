@@ -23,7 +23,7 @@ async function fetchTrivia() {
       "https://opentdb.com/api.php?amount=1&category=18"
     );
     const data = await response.json();
-
+    console.log(data);
     // const responseTwo = await fetch(data); // make another async call
   } catch (error) {
     console.log(error);
