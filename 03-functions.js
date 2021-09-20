@@ -15,3 +15,13 @@ const printName = (firstName = "John", lastName = "Doe") =>
 // console.log(printName("Hou", "Chia"));
 
 console.log(printName("Hou"));
+
+// Challenge: Refactor the following function to use arrow syntax
+
+// function add(a, b = 1) {
+//   return a + b;
+// }
+
+const add = (a, b = 1) => a + b;
+
+console.log(add(1));
