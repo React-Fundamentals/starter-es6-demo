@@ -35,6 +35,6 @@ const sentence =
 
 // ES6
 
-const sentenceES6 = `${greeting}, how are you doing? The weather is ${weather} today.`;
+const sentenceES6 = `${greeting}, \`asdf\` how are you doing? The weather is ${weather} today.`;
 
 console.log({ sentenceES6 });
