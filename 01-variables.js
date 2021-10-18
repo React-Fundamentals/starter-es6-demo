@@ -69,3 +69,10 @@ var animal = "rabbit";
 
 console.log({ flower });
 const flower = "rose";
+
+// FUNCTION SCOPE
+function example() {
+  let exampleString = "hello world";
+}
+
+console.log({ exampleString });
