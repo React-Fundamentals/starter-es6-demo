@@ -43,3 +43,38 @@ const letters = ["a", "b", "c"];
 
 const [firstLetter, secondLetter, thirdLetter, fourthLetter = "d"] = letters;
 console.log(firstLetter, secondLetter, thirdLetter, fourthLetter);
+
+// DESTRUCTURING PARAMETERS
+
+// ES5
+var introduce = function (name, title, city, age) {
+  return `Hello, my name is ${name}, and I'm a ${title}. I live in ${city}, and I'm ${age} years old.`;
+};
+console.log(introduce("Hou", "software engineer", "Brooklyn, NY", 32));
+
+// ES6
+const personTwo = {
+  name: "Hou Chia",
+  title: "software engineer",
+  city: "Brooklyn,NY",
+  age: 32,
+};
+
+const introduceES6 = ({ name, title, city, age }) =>
+  `Hello, my name is ${name}, and I'm a ${title}. I live in ${city}, and I'm ${age} years old.`;
+
+console.log(introduceES6(personTwo));
+
+const student = {
+  name: "Hou",
+  location: {
+    zipcode: 44114,
+    city: "Cleveland",
+  },
+};
+
+// print "Cleveland" to the console
+const {
+  location: { city },
+} = student;
+console.log(city);
