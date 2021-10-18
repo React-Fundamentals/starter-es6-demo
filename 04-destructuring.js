@@ -69,12 +69,14 @@ const student = {
   name: "Hou",
   location: {
     zipcode: 44114,
-    city: "Cleveland",
+    city: ["Cleveland"],
   },
 };
 
 // print "Cleveland" to the console
 const {
-  location: { city },
+  location: {
+    city: [city],
+  },
 } = student;
 console.log(city);
