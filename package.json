@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/React-Fundamentals/starter-es6-demo#readme",
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^3.0.0",
+    "react": "^17.0.2"
   },
   "type": "module"
 }
